@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/download_tv_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/baseline_download_24"
+        android:drawablePadding="5dp"
+        android:clickable="true"
+        android:padding="4dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/share_tv_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/baseline_share_24"
+        android:clickable="true"
+        android:drawablePadding="5dp"
+        android:padding="4dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/delete_tv_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:padding="4dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/baseline_delete_24"
+        android:textColor="@color/my_red"/>
+
+    <TextView
+        android:id="@+id/copyurl_tv_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="copy url"
+        android:textSize="20sp"
+
+        android:clickable="true"
+        android:padding="4dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/baseline_insert_link_24"
+        android:textColor="@color/black"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mini Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_individual_post">IndividualPost</string>
+    <string name="tab_text_1">Photos</string>
+    <string name="tab_text_2">Videos</string>
+    <string name="tab_text_3">Stories</string>
+</resources>

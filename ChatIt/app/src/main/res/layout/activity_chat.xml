@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chat_functionality.ChatActivity">
+
+    <EditText
+        android:id="@+id/search_user_ch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_grey_search"
+        android:drawablePadding="10dp"
+        android:background="@drawable/search_back"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

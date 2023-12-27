@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    Time at which we click on email Edit text icon color changes when it is in focus-->
+    <item android:state_focused="true"
+        android:drawable="@drawable/email_focused"/>
+
+    <!--    Time at which we didi not click on email Edit text icon color not changes until it comes into  focus-->
+
+    <item android:state_focused="false"
+        android:drawable="@drawable/ic_baseline_email_24"/>
+</selector>

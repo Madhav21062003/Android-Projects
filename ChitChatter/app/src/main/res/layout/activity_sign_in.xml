@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signInActivity"
+    android:gravity="center"
+    android:background="@color/lightGrey"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/whatsAppLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/whatsapp" />
+
+
+
+        <EditText
+            android:id="@+id/etEmailLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tvClickSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click for SignUp"
+            android:padding="3dp"
+            android:layout_gravity="right">
+        </TextView>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="150dp"
+            android:padding="15dp"
+            android:text="Sign In"
+            app:cornerRadius="4dp">
+
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/icons8_google"
+                android:padding="15dp"
+                android:text="Google"
+                android:textColor="@color/black"
+                app:cornerRadius="4dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/fb_color"
+                android:drawableLeft="@drawable/icons8_facebook"
+                android:padding="15dp"
+                android:text="Facebook"
+                app:cornerRadius="4dp">
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

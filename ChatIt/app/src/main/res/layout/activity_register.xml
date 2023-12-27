@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".authentication.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:layout_marginBottom="70dp"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/register_email_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:hint="User Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/grey"
+        android:drawableLeft="@drawable/custom_email_input"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_input"/>
+
+    <EditText
+        android:id="@+id/register_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:paddingStart="10dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/grey"
+        android:drawableLeft="@drawable/custom_input_pass"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_input"/>
+
+    <EditText
+        android:id="@+id/register_confirm_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:paddingStart="10dp"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/grey"
+        android:drawableLeft="@drawable/custom_input_pass"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_input"/>
+
+    <CheckBox
+        android:id="@+id/register_checkbox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:textColor="@color/white"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#EF0606"
+        android:elevation="10dp"
+        android:text="Register"
+        android:layout_margin="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signup_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#EF0606"
+        android:elevation="10dp"
+        android:text="Login"
+        android:layout_margin="10dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/white"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"/>
+
+
+</LinearLayout>

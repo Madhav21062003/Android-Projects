@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".CreateProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Create Profile"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/my_red"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardPreventCornerOverlap="false"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="75dp">
+
+        <ImageView
+            android:id="@+id/iv_cp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/baseline_person_24"
+            android:scaleType="fitCenter"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/et_name_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="3dp"
+        android:hint="Name"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_profession_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/baseline_work_24"
+        android:drawablePadding="3dp"
+        android:hint="Profession"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_bio_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/bio"
+        android:drawablePadding="3dp"
+        android:layout_marginTop="3dp"
+        android:hint="Bio"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_email_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="3dp"
+        android:layout_marginTop="3dp"
+        android:hint="Email"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_web_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/web"
+        android:drawablePadding="3dp"
+        android:clickable="true"
+        android:hint="Website Name"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"/>
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Save Profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_back"/>
+        
+        <ProgressBar
+            android:id="@+id/progressBar_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_margin="10dp"/>
+</LinearLayout>
+
+</ScrollView>

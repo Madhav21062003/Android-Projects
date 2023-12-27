@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".UpdateProfile">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Update Profile"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/my_red"/>
+
+    <EditText
+        android:id="@+id/et_name_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="3dp"
+        android:hint="Name"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_profession_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/baseline_work_24"
+        android:drawablePadding="3dp"
+        android:hint="Profession"
+        android:layout_margin="4dp"
+        android:textColor="#4A4848"/>
+
+    <EditText
+        android:id="@+id/et_bio_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/bio"
+        android:drawablePadding="3dp"
+        android:layout_marginTop="3dp"
+        android:hint="Bio"
+        android:layout_margin="4dp"
+        android:textColor="#4A4848"/>
+
+    <EditText
+        android:id="@+id/et_email_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="3dp"
+        android:layout_marginTop="3dp"
+        android:hint="Email"
+        android:layout_margin="4dp"
+        android:textColor="#4A4848"/>
+
+    <EditText
+        android:id="@+id/et_web_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/web"
+        android:drawablePadding="3dp"
+        android:hint="Website Name"
+        android:layout_margin="4dp"
+        android:textColor="#4A4848"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Save Profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_back"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentThree">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/requestsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requests"
+        android:textColor="@color/my_red"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_requestsf3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/my_red"
+        android:textSize="20sp"
+        android:text="Find People"
+        android:layout_marginStart="10dp"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "776883496321",
+    "project_id": "chatit-5aac1",
+    "storage_bucket": "chatit-5aac1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776883496321:android:bef3220eddc67116103480",
+        "android_client_info": {
+          "package_name": "com.example.chatit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776883496321-21g40fa804hfsmmutis36v26sj25v8oo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGpOJjdmvuoLtPfTLnSb_Inbtlzy7z3kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776883496321-21g40fa804hfsmmutis36v26sj25v8oo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
