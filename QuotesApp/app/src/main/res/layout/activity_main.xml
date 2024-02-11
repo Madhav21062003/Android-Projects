@@ -20,6 +20,7 @@
             android:textAlignment="center"
             android:textColor="#FFF"
             android:textSize="28sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -109,7 +110,8 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:layout_marginRight="24dp"
-            app:backgroundTint="#FFFFFF"
+
+            app:backgroundTint="#7F7A7A"
             android:onClick="onShare"
             android:foregroundTint="#FFF"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
