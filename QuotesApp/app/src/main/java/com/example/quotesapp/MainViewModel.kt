@@ -35,8 +35,26 @@ class MainViewModel(val context: Context): ViewModel(){
 
     fun getQuote() = quoteList[index]
 
-    fun nextQuote() = quoteList[++index]
-    fun previousQuote() = quoteList[--index]
+    fun nextQuote(): Quote {
+        if (index < quoteList.size - 1) {
+            index++
+        } else {
+            // If index is already at the last element, wrap around to the first element
+            index = 0
+        }
+        return quoteList[index]
+    }
+
+    fun previousQuote(): Quote {
+        if (index > 0) {
+            index--
+        } else {
+            // If index is already at the first element, wrap around to the last element
+            index = quoteList.size - 1
+        }
+        return quoteList[index]
+    }
+
 
 
 
